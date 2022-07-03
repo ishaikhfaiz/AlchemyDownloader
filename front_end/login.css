@@ -1,0 +1,72 @@
+.loginbox {
+width: 90%;
+height: 70%;
+background-color: white;
+color: black;
+top: 15%;
+left:5%;
+position: absolute;
+box-sizing: border-box;
+text-align:center;
+border-radius:20px;
+box-shadow:0px 0px 5px grey;
+overflow-y:scroll;
+white-space:normal;
+}
+.loginbox h1 {
+width:80%;
+margin:5% 10%;
+white-space:pre-line;
+}
+.loginbox p {
+margin: 0;
+margin-top:5%;
+padding: 0;
+width:80%;
+margin:auto 10%;
+text-align:left;
+font-weight: bold;
+}
+.loginbox input {
+width: 80%;
+margin:0 10%;
+margin-bottom:5%;
+}
+.loginbox input[type="email"], input[type="password"] {
+border: none;
+border-bottom: 1px solid grey;
+background: transparent;
+outline: thick;
+height: 35px;
+color: black;
+font-size: 120%;
+}
+.loginbox input[type="submit"] {
+border: 2px solid white;
+outline: none;
+height: 35px;
+background: rgb(27, 163, 27);
+color: #fff;
+font-size: 150%;
+}
+.loginbox input[type="submit"]:hover {
+cursor: pointer;
+background: rgb(128, 128, 3);
+color: #000;
+}
+.loginbox a {
+text-decoration: none;
+font-size: 120%;
+line-height: 20px;
+color: darkgrey;
+width:100%;
+text-align:center;
+}
+.loginbox a:hover {
+color: rgb(27, 163, 27);
+}
+.loginbox .logo {
+width: 25%;
+border-radius: 50%;
+margin: 2% 37.5%; 
+}

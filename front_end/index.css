@@ -1,0 +1,159 @@
+* {
+-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value
+opacity 0 to 1.0 */
+box-sizing:border-box;
+//float:left;
+//border:solid 1px black;
+}
+*:focus {
+outline:none;
+}
+@font-face {
+font-family:raleway;
+src:url("fonts/Raleway-Light.ttf");
+}
+html {
+height:100%;
+width:100%;
+margin:0;
+padding:0;
+position:relative;
+}
+body {
+-webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+-webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+-webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+background-attachment: fixed;
+font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+font-size: 12px;
+margin: 0px;
+padding: 0px;
+width: 100%;
+height: 100%;
+overflow:hidden;
+background-repeat:no-repeat;
+position:relative;
+}
+#window {
+height: 100%;
+width: 400%;
+overflow-x: hidden;
+display: block;
+white-space:nowrap;
+margin: 0;
+padding:0;
+position: fixed;
+transform:translateX(-50%);
+transition:transform ease-out 0.3s;
+font-family:raleway;
+}
+.activity {
+height: 100%;
+width: 25%;
+display: inline-block;
+border: 1px solid black;
+margin: 0;
+float: left;
+padding: 0;
+position: relative;
+background:linear-gradient(to bottom right, rgb(55,255,155),rgb(155,55,255));
+}
+#wrap {
+background: black;
+opacity: 0;
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+z-index: 3;
+transition: opacity 0.5s;
+}
+#alert {
+background: white;
+font-size: 200%;
+height: 30%;
+width: 80%;
+border-radius: 20px;
+box-shadow: 0px 0px 5px black;
+z-index: 4;
+position: relative;
+margin-left: 10%;
+transform: translateY(-300%);
+transition: transform ease-out 0.2s;
+padding-bottom:8%;
+text-align: center;
+white-space:nowrap;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+#alertMsg {
+height:80%;
+width:100%;
+padding:3px;
+overflow-y:scroll;
+overflow-x:hidden;
+white-space:normal;
+float:none;
+}
+#clsAlert {
+height: 20%;
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+border: none;
+border-top: solid 1px;
+background:grey;
+border-radius: 0 0 20px 20px;
+color:white;
+}
+#dlStatus {
+height: 30%;
+width: 90%;
+margin: 0% 5%;
+background: linear-gradient(to right, rgba(95, 226, 5, 0.9), rgb(0, 255, 222));
+background-color: rgba(255,255,255,0.8);
+background-repeat: no-repeat;
+background-size: 0% 100%;
+position: absolute;
+top:0;
+z-index: 4;
+transform: translateY(-120%);
+transition-property: transform, background-size;
+transition-duration:0.2s, 0.1s;
+transition-timing-function:ease-out;
+}
+#dlStatusName {
+position:absolute;
+top:2%;
+left:2%;
+color:#666666;
+font-size:150%;
+white-space:nowrap;
+overflow-x:scroll;
+width:70%;
+}
+#dlStatusPerc {
+position:absolute;
+bottom:20%;
+right:2%;
+color:black;
+font-size:250%;
+overflow-x:scroll;
+white-space:nowrap;
+width:80%;
+height:25%;
+text-align:right;
+}
+#cancelDl {
+position:absolute;
+bottom:0; right:0;
+background:red;
+color:white;
+border:none;
+height:20%;
+width:100%;
+font-size:120%;
+}

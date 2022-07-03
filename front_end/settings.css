@@ -1,0 +1,130 @@
+#settings {
+background:#eeeeee;
+font-family:Arial;
+}
+#settingsHeader {
+position: sticky;
+top: 0;
+right: 0;
+height: 8%;
+width: 100%;
+background: #00cc00;
+color: white;
+font-size: 200%;
+z-index:1;
+font-family: Arial;
+}
+#settingsHeader #homeBtn {
+width:15%;
+font-size: 130%;
+color: white;
+background: transparent;
+border:none;
+display: inline-block;
+position: absolute;
+top: 20%;
+left: 2%;
+}
+#settingsHeader #homeBtn i {
+height:100%; width:100%;
+}
+#settingsHeader span {
+position:absolute;
+width:85%;
+top:25%; left:20%;
+}
+#settings #dlPathCnt {
+height:10%;
+width:95%;
+position:absolute;
+top:10%;
+left:2.5%;
+box-shadow:0px 0px 3px grey;
+background:white;
+}
+#settings #dlPathCnt #dlPathHeader {
+height:30%;
+width:90%;
+position:absolute;
+top:2%;
+left:5%;
+color:#003cff;
+font-size:170%;
+font-weight:bold;
+}
+#settings #dlPathCnt #dlPathL {
+height:60%;
+width:90%;
+display:block;
+position:absolute;
+top:40%;
+left:5%;
+}
+#settings #dlPathCnt #dlPathL #dlPath {
+height: 70%;
+width: 85%;
+position:absolute;
+top:20%;
+left:0;
+overflow:scroll;
+display:inline-block;
+white-space:nowrap;
+font-size:150%;
+}
+#settings #dlPathCnt #dlPathL button {
+height: 90%;
+width: 15%;
+position:absolute;
+top:5%;
+right:0;
+border:none;
+background:#00cc00;
+color:white;
+font-size:180%;
+text-align:center;
+}
+#settings #dlPathCnt #dlPathL button i {
+height:70%; width:100%;
+}
+#settings #logout {
+height:5%;
+width:40%;
+position:absolute;
+top:25%;
+left:5%;
+background:red;
+color:white;
+padding:2% 5%;
+font-size:150%;
+box-shadow:0px 0px 3px grey;
+border:none;
+}
+#settings #about {
+height:60%;
+width:95%;
+position:absolute;
+top:35%;
+left:2.5%;
+border-top:solid 1px;
+}
+#settings #about #aboutHeader {
+color:#003cff;
+font-size:150%;
+font-weight:bold;
+margin-top:3%;
+background:white;
+height:6%; width:100%;
+position:sticky;
+padding:1% 5%;
+}
+
+#settings #about #aboutData {
+color:black;
+background:white;
+font-size:150%;
+padding:2%;
+position:absolute;
+top:9%;
+white-space:pre-wrap;
+width:100%;
+}

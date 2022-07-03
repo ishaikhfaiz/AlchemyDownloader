@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+integrity="sha384-
+B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+crossorigin="anonymous">
+<link href="css/index.css" rel="stylesheet" />
+<link href="css/home.css" rel="stylesheet" />
+<link href="css/settings.css" rel="stylesheet" />
+<link href="css/login.css" rel="stylesheet" />
+<link href="css/signup.css" rel="stylesheet" />
+<script src="cordova.js"></script>
+<script src="scripts/const.js"></script>
+<script src="scripts/communication.js"></script>
+<script src="scripts/login.js"></script>
+<script src="scripts/singup.js"></script>
+<script src="scripts/profile.js"></script>
+<script src="scripts/download.js"></script>
+
+<script src="scripts/ui.js"></script>
+<script src="scripts/misc.js"></script>
+<script src="scripts/handler.js"></script>
+<script src="scripts/mime.js"></script>
+<script src="scripts/index.js"></script>
+</head>
+<body>
+<div id="window">
+<div class="activity" id="signup">
+<div class="signupbox">
+<img src="images/AD.jpg" class="logo">
+<h1>Start using this app by creating your Account in few simple steps</h1><br><br><br>
+<div id="f1">
+<div>Avatar</div>
+<input type="button" value="browse image" id="chooseAvt" />
+<div>Username *</div>
+<input type="text" id="suname">
+<div>First Name *</div>
+<input type="text" id="fname">
+<div>Last Name *</div>
+<input type="text" id="lname">
+<div>Date of Birth *</div>
+<input type="date" id="dob">
+<div> Email *</div>
+
+<input type="email" id="mail">
+<div> Password *</div>
+<input type="password" id="spass">
+<!----div class="pp">By Creating an account, you agree to the terms of use and Privacy
+Policy</div-->
+<br>
+<div>* marked fields are required</div>
+<br />
+<input type="submit" value="Register Now!" id="actSignup">
+<a id="loginBtn">Already have an account? Login</a>
+<br /><br />
+</div>
+</div>
+</div>
+<div class="activity" id="login">
+<div class="loginbox">
+<br />
+<img src="images/AD.jpg" class="logo">
+<h1>Please Login to use this app</h1><br><br><br>
+<div id="f1">
+<p> Username</p>
+<input type="email" id="luname" placeholder="Enter Username">
+<p> Password</p>
+<input type="password" id="lpass" placeholder="Enter Password">
+
+<input type="submit" value="Login" id="actLogin">
+<!----div class="fp"><a href="#lost">Forgot Password?</a></div-->
+<a id="signUpBtn">Not a member? Sign Up</a>
+</div>
+</div>
+</div>
+<div class="activity" id="home">
+<div id="homeHeader">
+<button id="setBtn"><i class="fa fa-cog"></i></button>
+<img id="avt" />
+</div>
+<div id="banner">
+Alchemy <br />Downloader
+</div>
+<div id="urlCont">
+<input type="url" id="dlUrl" placeholder="Enter the url of file" />
+<button id="dlBtn"><i class="fa fa-arrow-right"></i></button>
+</div>
+<div id="downloads">
+<div id="header">Downloads</div>
+</div>
+</div>
+<div class="activity" id="settings">
+<div id="settingsHeader">
+
+<button id="homeBtn"><i class="fa fa-arrow-left"></i></button>
+<span> Settings </span>
+</div>
+<div id="dlPathCnt">
+<div id="dlPathHeader">Download Path</div>
+<div id="dlPathL">
+<div id="dlPath">\storage\0\emulated\Downloads</div>
+<button id="chgDlPath"><i class="fa fa-pen"></i></button>
+</div>
+</div>
+<button id="logout">
+Logout
+</button>
+<div id="about">
+<div id="aboutHeader">About</div>
+<div id="aboutData">
+Alchemy Downloader is a service which provides its users with the facility of saving
+their Internet Data in downloading their desired file. This project is developed for the Final Year
+Project of the students of Batch 2017 of IT Department in M.H. Saboo Siddik Polytechnic. The group
+members are Shaikh Amaan FM, Shaikh Faiz Salim, Bubere Zaryab Husain, and Maniyar Yunus
+Irfan. We would like to thank our mentor Mr. Mujibullah Khan. We would also like to thank Ms.
+Sameera Khan, the HOD of IT department.
+</div>
+</div>
+</div>
+
+</div>
+<div id="alert">
+<div id="alertMsg"></div>
+<button id="clsAlert">OK</button>
+</div>
+<div id="wrap"></div>
+<div id="dlStatus">
+<div id="dlStatusName"></div>
+<div id="dlStatusPerc">56 %</div>
+<button id="cancelDl">CANCEL</button>
+</div>
+</body>
+</html>
