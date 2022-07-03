@@ -1,4 +1,4 @@
-# Alchemy Downloader- App Based on Javascript
+# Alchemy Downloader- Application Based on JavaScript
 Mobile app built on Basic Javascript
 
 
