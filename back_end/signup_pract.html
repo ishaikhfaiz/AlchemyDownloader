@@ -1,0 +1,33 @@
+<script>
+function main() {
+    uname="expire_this";
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if(this.readyState==4 && this.status==200) {
+        var res = this.responseText;
+        document.getElementById("res").innerHTML=res; 
+        console.log("responded");
+    }
+};
+
+var fd = new FormData();
+fd.append("avt",document.getElementById("avt").files[0]);
+console.log(document.getElementById("avt").files[0]);
+
+xhttp.open("POST", "http://localhost:8080/signup");
+
+xhttp.setRequestHeader("uname",uname);
+xhttp.setRequestHeader("fname","Amaan");
+xhttp.setRequestHeader("lname","Shaikh");
+xhttp.setRequestHeader("mail","thisisamaan.s@gmail.com");
+xhttp.setRequestHeader("pass","asfm@kzma");
+xhttp.setRequestHeader("dob","04/08/2000");
+
+xhttp.send(fd);
+
+}
+</script>
+
+<input type="file" id='avt'>
+<button onclick="main()">send</button>
+<div id="res"></div>

@@ -1,0 +1,70 @@
+<!--script>
+    var b,h;
+    function main(){
+        //var f = document.getElementById("f").files[0];
+        //console.log(f);
+        //console.log("sending request");
+        //var fd = new FormData();
+        //fd.append("avatar",f);
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+            if(this.status==200 && this.readyState==4){
+                console.log("response ended");
+                //console.log(b=new Blob([this.response],{type:"application/octet-stream"}));
+            }
+        };
+        xhttp.onprogress = (ev)=>{
+            console.log(xhttp.response);
+        };
+
+        xhttp.open("POST","http://localhost:8080/download");
+        xhttp.setRequestHeader("protocol","http");
+        xhttp.setRequestHeader("sid","@%1^^R0AxlQ@k%z^l$Aj0@ThhCzRRSSETAlAxlB0$Bh");
+        xhttp.setRequestHeader("src","212.183.159.230/100MB.zip");
+        xhttp.responseType="blob";
+        xhttp.send();
+    }
+    main();
+</script>
+<!--div id="result">
+
+</div>
+<input type="file" id="f">
+<button onclick="main()">send</button-->
+
+<script>
+    var d;
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = ()=>{
+        if(xhttp.readyState==4&& xhttp.status ==200 ){
+            d = xhttp.response;
+            res = xhttp.response;
+                
+                var url = URL.createObjectURL(res,{type:"application/zip"});
+                window.open(url);
+             
+        }
+    };   
+    xhttp.open("GET","http://localhost:8080/download");
+    xhttp.overrideMimeType("application/zip");
+    xhttp.responseType = "blob"; 
+
+    xhttp.setRequestHeader("protocol","http");
+    xhttp.setRequestHeader("src","212.183.159.230/100MB.zip");
+    xhttp.setRequestHeader("sid","@%1^^R0AxlQ@k%z^l$Aj0@ThhCzRRSSETAlAxlB0$Bh");
+
+    xhttp.send();
+
+
+
+</script>
+
+<video id="d"></video>
+
+
+
+
+
+
+

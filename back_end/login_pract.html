@@ -1,0 +1,23 @@
+<script>
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if(this.readyState==4 && this.status==200) {
+        var res = this.responseText;
+        document.write(res); 
+        console.log("responded");
+    }
+};
+
+xhttp.open("POST", "http://localhost:8080/login");
+
+xhttp.setRequestHeader("login-type","uname");
+
+xhttp.setRequestHeader("uname","shaikh_amaan_fm");
+xhttp.setRequestHeader("pass","asfm@kzma");
+
+//xhttp.setRequestHeader("sid","1R$UhAhjh@ETx$0Sz%QCDxByAz1h^j0z$jxDTjS@h1");
+
+xhttp.send();
+
+</script>

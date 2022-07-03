@@ -1,0 +1,22 @@
+<script>
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if(this.readyState==4 && this.status==200) {
+        var res = this.responseText;
+        document.write(res); 
+        console.log("responded");
+    }
+};
+
+xhttp.open("POST", "http://localhost:8080/resetPass?kCQi1Ahh^k^E%y@$@%U%1xShhAkD@ARCCEyiSB1lQky^SUiiy");
+//xhttp.open("POST","http://localhost:8080/forgotPass");
+//xhttp.setRequestHeader("uname","shaikh_amaan_fm");
+
+//xhttp.setRequestHeader("uname","shaikh_amaan_fm");
+//xhttp.setRequestHeader("pass","asfm@kzma");
+xhttp.setRequestHeader("npass","asfm@kzma");
+
+xhttp.send();
+
+</script>
